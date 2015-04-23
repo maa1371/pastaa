@@ -27,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     iHeight=_iView.contentSize.height;
     self.sendBtn.layer.cornerRadius=2;
     self.iView.layer.cornerRadius=5;
@@ -182,12 +183,12 @@
     iHeight=_iView.contentSize.height;
     
     _viewHeight.constant=iHeight;
-    
+    NSLog(@"message::%@",self.iView.text);
+
     //    if (_iViewHeight.constant<iHeight) {
     //    }
 }
 - (IBAction)sendBtnPressed:(id)sender {
-    [self.iView resignFirstResponder];
     PFObject *iObj=self.ResturantObject;
     hud2 = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud2.mode = MBProgressHUDModeIndeterminate;
@@ -199,41 +200,41 @@
     PFObject *comment = [PFObject objectWithClassName:@"comment"];
     
     PFUser *currentUser = [PFUser currentUser];
-    if (currentUser) {
-        //  NSLog(@"name ,%@",currentUser.objectId);
-    } else {
-        // show the signup or login screen
-    }
     
     [comment setObject:currentUser forKey:@"userID"];
-    [comment setObject:currentUser.username forKey:@"name"];
-    [comment setObject:iObj forKey:@"resturantID"];
     
+    [comment setObject:currentUser.username forKey:@"name"];
+    
+    
+    [comment setObject:iObj forKey:@"resturantID"];
+
     [comment setObject:self.iView.text forKey:@"message"];
     
-    
-    
+    [self.messageArray addObject:self.iView.text];
+    [self.userNameArray addObject:currentUser.username];
+    [self.commentTable reloadData];
+
     [comment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         
         if (succeeded){
             
             NSLog(@"Object Uploaded!");
-            [self.messageArray addObject:self.iView.text];
-            [self.userNameArray addObject:currentUser.username];
+           
         }
         else{
             NSString *errorString = [[error userInfo] objectForKey:@"error"];
             NSLog(@"Error: %@", errorString);
         }
-        [self.commentTable reloadData];
         
         [hud2 hide:YES];
     }];
     
-    [self.view reloadInputViews];
+   // [self.view reloadInputViews];
+    
     [hud show:YES];
     
-    
+    [self.iView resignFirstResponder];
+
     
    // [self.messageArray removeAllObjects];
    // [self.userNameArray removeAllObjects];

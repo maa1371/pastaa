@@ -10,14 +10,14 @@
 	<string>pastaa</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B313634F047006A4937EF628832B82B6578EB2A6</key>
+		<key>70D4EC8DC8199794351378D2E92D9BFAC47207EE</key>
 		<string>https://github.com/Gereh/pastaa.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>pastaa.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B313634F047006A4937EF628832B82B6578EB2A6</key>
+		<key>70D4EC8DC8199794351378D2E92D9BFAC47207EE</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B313634F047006A4937EF628832B82B6578EB2A6</string>
+	<string>70D4EC8DC8199794351378D2E92D9BFAC47207EE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B313634F047006A4937EF628832B82B6578EB2A6</string>
+			<string>70D4EC8DC8199794351378D2E92D9BFAC47207EE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>pastaa</string>
 		</dict>
