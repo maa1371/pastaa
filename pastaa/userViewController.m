@@ -196,10 +196,17 @@
     return YES;
 }
 
-// Override to support editing the table view.
+
+
+
+//
+//// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    
     if (editingStyle == UITableViewCellEditingStyleDelete) {
 
+        
     
         
 //        PFQuery *query = [PFQuery queryWithClassName:@"reserve"];
@@ -254,6 +261,101 @@
 
         
         
+//        PFObject *deleteObject= [_reservedResturants objectAtIndex:indexPath.row];
+//        [deleteObject deleteInBackground];
+//        
+//        
+//        
+//        
+//        [_reservedResturants removeObjectAtIndex:indexPath.row];
+//        [_hours removeObjectAtIndex:indexPath.row];
+//        [_dates removeObjectAtIndex:indexPath.row];
+//        [_rCount removeObjectAtIndex:indexPath.row];
+//        [_resturantName removeObjectAtIndex:indexPath.row];
+////        [_restID removeObjectAtIndex:indexPath.row];
+//        [_reserveID removeObjectAtIndex:indexPath.row];
+//
+//
+//        
+//        
+//        
+//        
+//        NSLog(@"delete");
+        
+    }
+         
+    [self.reserveTable reloadData];
+}
+
+
+-(NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewRowAction *shareAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Share" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        
+        
+        
+        
+        NSString *textToShare1=@"سلام دوست عزیزم";
+        [_reservedResturants removeObjectAtIndex:indexPath.row];
+        [_hours removeObjectAtIndex:indexPath.row];
+        [_dates removeObjectAtIndex:indexPath.row];
+        [_rCount removeObjectAtIndex:indexPath.row];
+        [_resturantName removeObjectAtIndex:indexPath.row];
+        //        [_restID removeObjectAtIndex:indexPath.row];
+        [_reserveID removeObjectAtIndex:indexPath.row];
+        
+        
+        
+
+        NSString *textToShare2=@"شما رو به روستوران ";
+        NSString *textToShare3= [_resturantName objectAtIndex:indexPath.row];
+        
+        NSString *textToShare4=@"در تاریخ";
+        NSString *textToShare5= [_dates objectAtIndex:indexPath.row];
+        
+        NSString *textToShare6=@"ساعت";
+       
+        NSString *textToShare7=[NSString stringWithFormat:@"%@ الی %i",[self.hours objectAtIndex:indexPath.row],((NSString*)[self.hours objectAtIndex:indexPath.row]).intValue+1];
+        
+        NSString *textToShare8=@"دعوت میکنم";
+        NSString *textToShare9=@"کد رزرو شما ";
+        NSString *textToShare10=[_reserveID objectAtIndex:indexPath.row];
+
+        
+        
+        NSURL *myWebsite = [NSURL URLWithString:@"http://www.pastaa.com"];
+        
+        
+        
+        
+        UIActivityViewController *activityViewController =
+        [[UIActivityViewController alloc] initWithActivityItems:@[textToShare1,textToShare2,textToShare3,textToShare4,textToShare5,textToShare6,textToShare7,textToShare8,textToShare9,textToShare10,myWebsite ]
+                                          applicationActivities:nil];
+        [self presentViewController:activityViewController
+                           animated:YES
+                         completion:^{
+                             if ([activityViewController respondsToSelector:@selector(popoverPresentationController)])
+                             {
+                                 UIPopoverPresentationController *presentationController = [activityViewController popoverPresentationController];
+                                 
+                                 presentationController.sourceView = self.view;
+                             }
+                         }];
+        
+
+
+        
+        
+    }];
+    shareAction.backgroundColor = [UIColor greenColor];
+    
+    
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Delete"  handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        
+        
+        
+        
+        
         PFObject *deleteObject= [_reservedResturants objectAtIndex:indexPath.row];
         [deleteObject deleteInBackground];
         
@@ -265,20 +367,26 @@
         [_dates removeObjectAtIndex:indexPath.row];
         [_rCount removeObjectAtIndex:indexPath.row];
         [_resturantName removeObjectAtIndex:indexPath.row];
-//        [_restID removeObjectAtIndex:indexPath.row];
+        //        [_restID removeObjectAtIndex:indexPath.row];
         [_reserveID removeObjectAtIndex:indexPath.row];
-
-
+        
+        
         
         
         
         
         NSLog(@"delete");
+        [self.reserveTable reloadData];
+
         
-    }
-         
-    [self.reserveTable reloadData];
+        
+    }];
+    deleteAction.backgroundColor = [UIColor redColor];;
+
+    
+    return @[deleteAction,shareAction];
 }
+
 
 
 

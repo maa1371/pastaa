@@ -216,12 +216,11 @@
             
         } else {
             //Something bad has occurred
-            NSString *errorString = [[error userInfo] objectForKey:@"error"];
-            
-            UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"خطا" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [errorAlertView show];
-            
             [hud hide:YES];
+
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"خطا " message:@"عملیات ثبت نام انجام نشد دوباره اقدام نمایید" delegate:self cancelButtonTitle:@"بازگشت" otherButtonTitles:nil, nil];
+            [self.view addSubview:alert];
+            [alert show];
 
         }
     }];
@@ -280,8 +279,7 @@
 }
 -(void)loginAction:(UIButton*)sender{
 
-   
-   
+    
     hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.labelText = @"دریافت اطلاعات ...";
@@ -300,10 +298,21 @@
             
         } else {
             //Something bad has ocurred
-            NSString *errorString = [[error userInfo] objectForKey:@"error"];
-            UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"خطا" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [errorAlertView show];
+//            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+//            UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"خطا" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+//            [errorAlertView show];
             [hud hide:YES];
+
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"خطا " message:@"عملیات ورودی انجام نشد دوباره اقدام نمایید" delegate:self cancelButtonTitle:@"بازگشت" otherButtonTitles:nil, nil];
+            [self.view addSubview:alert];
+            [alert show];
+
+            
+            
+
+            
+        
+            
         }
     }];
 }
