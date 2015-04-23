@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0AC3A3BB-AD1A-4710-8BB7-92CF0AD63BCA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>pastaa</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B313634F047006A4937EF628832B82B6578EB2A6</key>
+		<string>https://github.com/Gereh/pastaa.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pastaa.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B313634F047006A4937EF628832B82B6578EB2A6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Gereh/pastaa.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B313634F047006A4937EF628832B82B6578EB2A6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B313634F047006A4937EF628832B82B6578EB2A6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pastaa</string>
+		</dict>
+	</array>
+</dict>
+</plist>

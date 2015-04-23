@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="loginView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.49999999999999961" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mb-Zl-iF3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmu-fB-fJA">
+                    <rect key="frame" x="272" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DL1-dH-bUr"/>
+                        <constraint firstAttribute="width" constant="40" id="JNO-80-1R0"/>
+                        <constraint firstAttribute="height" constant="40" id="RgM-9g-p16"/>
+                    </constraints>
+                    <state key="normal" image="close.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DL1-dH-bUr"/>
+                        </mask>
+                    </variation>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STT-8J-EbY">
+                    <rect key="frame" x="8" y="47" width="304" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="E2m-tF-vXQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-Nv-VOb">
+                    <rect key="frame" x="8" y="88" width="304" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcp-Rh-tRk">
+                    <rect key="frame" x="8" y="143" width="304" height="48"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="wqa-Um-qw6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="ورود">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cIa-Nv-VOb" firstAttribute="top" secondItem="STT-8J-EbY" secondAttribute="bottom" constant="1" id="A3H-sL-kRL"/>
+                <constraint firstItem="rmu-fB-fJA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C0Q-Yy-oyh"/>
+                <constraint firstItem="cIa-Nv-VOb" firstAttribute="leading" secondItem="STT-8J-EbY" secondAttribute="leading" id="CWx-TD-hXk"/>
+                <constraint firstAttribute="bottom" secondItem="4Mb-Zl-iF3" secondAttribute="bottom" id="Edu-io-RwP"/>
+                <constraint firstAttribute="trailing" secondItem="rmu-fB-fJA" secondAttribute="trailing" constant="8" id="FXm-MF-aDo"/>
+                <constraint firstItem="fcp-Rh-tRk" firstAttribute="trailing" secondItem="cIa-Nv-VOb" secondAttribute="trailing" id="JEm-9K-957"/>
+                <constraint firstItem="STT-8J-EbY" firstAttribute="top" secondItem="rmu-fB-fJA" secondAttribute="bottom" constant="7" id="L0i-8l-e8L"/>
+                <constraint firstItem="4Mb-Zl-iF3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OgA-cA-weX"/>
+                <constraint firstItem="fcp-Rh-tRk" firstAttribute="top" secondItem="cIa-Nv-VOb" secondAttribute="bottom" constant="15" id="Qer-oI-YTr"/>
+                <constraint firstAttribute="trailing" secondItem="STT-8J-EbY" secondAttribute="trailing" constant="8" id="VC5-lJ-2SS"/>
+                <constraint firstItem="cIa-Nv-VOb" firstAttribute="trailing" secondItem="STT-8J-EbY" secondAttribute="trailing" id="Vbr-8b-J34"/>
+                <constraint firstItem="rmu-fB-fJA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZFI-K3-Bvh"/>
+                <constraint firstItem="cIa-Nv-VOb" firstAttribute="height" secondItem="STT-8J-EbY" secondAttribute="height" id="fdI-m8-FfW"/>
+                <constraint firstItem="fcp-Rh-tRk" firstAttribute="leading" secondItem="cIa-Nv-VOb" secondAttribute="leading" id="jxW-Ch-wIE"/>
+                <constraint firstItem="STT-8J-EbY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="nrc-jX-V6j"/>
+                <constraint firstAttribute="trailing" secondItem="4Mb-Zl-iF3" secondAttribute="trailing" id="t2r-2x-h6j"/>
+                <constraint firstItem="4Mb-Zl-iF3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uyY-7r-NLQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="C0Q-Yy-oyh"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backBtn" destination="rmu-fB-fJA" id="9Rx-I5-Wiw"/>
+                <outlet property="loginBtn" destination="fcp-Rh-tRk" id="Brc-gh-bCr"/>
+                <outlet property="passwordTextField" destination="cIa-Nv-VOb" id="0FC-J2-OEJ"/>
+                <outlet property="usernameTextField" destination="STT-8J-EbY" id="WyH-Uc-A8q"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="close.png" width="57" height="57"/>
+    </resources>
+</document>

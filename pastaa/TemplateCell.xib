@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="koodak.ttf">
+            <string>Wkoodak</string>
+            <string>Wkoodak</string>
+            <string>Wkoodak</string>
+            <string>Wkoodak</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TemplateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CxP-vG-alh">
+                        <rect key="frame" x="237" y="12" width="75" height="75"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="WgX-nl-mLL"/>
+                            <constraint firstAttribute="width" constant="75" id="oQx-br-2a2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="غذا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZN-T8-Xxh">
+                        <rect key="frame" x="209" y="12" width="20" height="37.5"/>
+                        <fontDescription key="fontDescription" name="Wkoodak" family="W_koodak" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تومان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGj-28-lVK">
+                        <rect key="frame" x="8" y="43" width="60" height="15.5"/>
+                        <fontDescription key="fontDescription" name="Wkoodak" family="W_koodak" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ترکیبات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-tG-ca3">
+                        <rect key="frame" x="68" y="49.5" width="161" height="23"/>
+                        <fontDescription key="fontDescription" name="Wkoodak" family="W_koodak" pointSize="9"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۳۷۰۰۰" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-4N-Usv">
+                        <rect key="frame" x="8" y="12" width="75" height="31"/>
+                        <fontDescription key="fontDescription" name="Wkoodak" family="W_koodak" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="CxP-vG-alh" firstAttribute="bottom" secondItem="Lbk-tG-ca3" secondAttribute="bottom" constant="14.5" id="2Q0-Lg-pJX"/>
+                    <constraint firstItem="LGj-28-lVK" firstAttribute="top" secondItem="Tak-4N-Usv" secondAttribute="bottom" id="IAI-Po-0O0"/>
+                    <constraint firstItem="EZN-T8-Xxh" firstAttribute="height" secondItem="CxP-vG-alh" secondAttribute="height" multiplier="0.5" id="MeD-xF-uNT"/>
+                    <constraint firstItem="Tak-4N-Usv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="QZG-7z-4l2"/>
+                    <constraint firstItem="EZN-T8-Xxh" firstAttribute="trailing" secondItem="Lbk-tG-ca3" secondAttribute="trailing" id="SMY-Xm-zmb"/>
+                    <constraint firstItem="LGj-28-lVK" firstAttribute="leading" secondItem="Tak-4N-Usv" secondAttribute="leading" id="a2f-mX-z3T"/>
+                    <constraint firstItem="CxP-vG-alh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="b7U-9O-l4u"/>
+                    <constraint firstItem="EZN-T8-Xxh" firstAttribute="bottom" secondItem="Tak-4N-Usv" secondAttribute="bottom" constant="6.5" id="gAw-Oj-uCv"/>
+                    <constraint firstItem="CxP-vG-alh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="jSZ-cg-I9K"/>
+                    <constraint firstItem="Lbk-tG-ca3" firstAttribute="leading" secondItem="LGj-28-lVK" secondAttribute="trailing" id="pBa-A8-hzj"/>
+                    <constraint firstItem="LGj-28-lVK" firstAttribute="trailing" secondItem="Tak-4N-Usv" secondAttribute="trailing" constant="-15" id="prU-6E-wFX"/>
+                    <constraint firstItem="EZN-T8-Xxh" firstAttribute="top" secondItem="Tak-4N-Usv" secondAttribute="top" id="rJs-mb-ahB"/>
+                    <constraint firstItem="LGj-28-lVK" firstAttribute="height" secondItem="Tak-4N-Usv" secondAttribute="height" multiplier="0.5" id="sCL-MJ-MHt"/>
+                    <constraint firstItem="EZN-T8-Xxh" firstAttribute="top" secondItem="CxP-vG-alh" secondAttribute="top" id="sOT-yY-pHo"/>
+                    <constraint firstItem="CxP-vG-alh" firstAttribute="leading" secondItem="EZN-T8-Xxh" secondAttribute="trailing" constant="8" id="uj3-rH-yms"/>
+                    <constraint firstItem="CxP-vG-alh" firstAttribute="width" secondItem="Tak-4N-Usv" secondAttribute="width" id="wpB-Mk-yzM"/>
+                    <constraint firstItem="Lbk-tG-ca3" firstAttribute="top" secondItem="EZN-T8-Xxh" secondAttribute="bottom" id="zHJ-sg-TcM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="foodImage" destination="CxP-vG-alh" id="nwK-o3-RCr"/>
+                <outlet property="foodIngredient" destination="Lbk-tG-ca3" id="ygp-Yt-zCe"/>
+                <outlet property="foodName" destination="EZN-T8-Xxh" id="saZ-kq-ihB"/>
+                <outlet property="foodPrice" destination="Tak-4N-Usv" id="KdN-vo-ICD"/>
+            </connections>
+            <point key="canvasLocation" x="283" y="225"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="5.jpg" width="1920" height="1080"/>
+    </resources>
+</document>
