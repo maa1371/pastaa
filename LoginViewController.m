@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
 //    [self.loginBackgroundImage setImageToBlur:self.loginBackgroundImage.image
 //                        blurRadius:kLBBlurredImageDefaultBlurRadius
 //                   completionBlock:^(){
@@ -103,8 +104,16 @@
     [self.view addSubview:logView];
     [self.view bringSubviewToFront:logView];
     // Do any additional setup after loading the view.
+    
+   
+
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+
+    [self firstLogin];
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -200,7 +209,8 @@
             //The registration was successful, go to the wall
             
             [hud hide:YES];
-
+            
+            [self registerBackAction:_registerOutlet];
             [self performSegueWithIdentifier:@"loginConfirmed" sender:self];
             
             
@@ -253,22 +263,41 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)firstLogin{
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSLog(@"yes :: %@",currentUser);
+        [self performSegueWithIdentifier:@"loginConfirmed" sender:self];
+    } else {
+        NSLog(@"no");
+    }
+
+}
+
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
 }
 -(void)loginAction:(UIButton*)sender{
+
+   
    
     hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.labelText = @"دریافت اطلاعات ...";
     [hud show:YES];
-    
+
+
+
     [PFUser logInWithUsernameInBackground:loginUsernameTextField.text password:loginPasswordTextField.text block:^(PFUser *user, NSError *error) {
         if (user) {
             [hud hide:YES];
             
+            [self loginBackAction:_loginOutlet];
+            
+
             [self performSegueWithIdentifier:@"loginConfirmed" sender:self];
+            
         } else {
             //Something bad has ocurred
             NSString *errorString = [[error userInfo] objectForKey:@"error"];

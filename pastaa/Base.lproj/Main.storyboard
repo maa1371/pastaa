@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="217"/>
+            <point key="canvasLocation" x="798" y="210"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="03c-2T-hOu">
@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1E-pS-8Gv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715" y="217"/>
+            <point key="canvasLocation" x="1666" y="217"/>
         </scene>
         <!--Search List View Controller-->
         <scene sceneID="1au-58-LQR">
@@ -829,44 +829,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9V0-MZ-5Tn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1250" y="217"/>
-        </scene>
-        <!--Test View Controller-->
-        <scene sceneID="uPw-1U-2GE">
-            <objects>
-                <viewController id="Asf-t8-FJg" customClass="testViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="k5L-OO-q3y"/>
-                        <viewControllerLayoutGuide type="bottom" id="KDs-yJ-IFz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VqT-2i-mHE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xq-6I-ueK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1039" y="-488"/>
-        </scene>
-        <!--Upload View Controller-->
-        <scene sceneID="1ng-wj-4Ob">
-            <objects>
-                <viewController id="aC6-4I-yAM" customClass="uploadViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vMY-yw-Paa"/>
-                        <viewControllerLayoutGuide type="bottom" id="E69-yD-Edi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qaf-KU-Ktq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9CN-lv-FJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1456" y="-375"/>
         </scene>
         <!--User View Controller-->
         <scene sceneID="CNi-N6-G2L">
@@ -1656,7 +1618,7 @@
         <image name="right reserv day.png" width="84" height="123"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ggy-Dx-7oU"/>
-        <segue reference="WVf-rW-Jly"/>
+        <segue reference="MxC-xB-qQh"/>
+        <segue reference="yDY-FD-c7F"/>
     </inferredMetricsTieBreakers>
 </document>

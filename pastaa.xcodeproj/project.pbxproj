@@ -17,7 +17,6 @@
 		E83904901AA7248D00495F5C /* Funnel.png in Resources */ = {isa = PBXBuildFile; fileRef = E839048F1AA7248D00495F5C /* Funnel.png */; };
 		E8525A901AAD795600A80DED /* resturantGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8525A8F1AAD795600A80DED /* resturantGalleryViewController.m */; };
 		E8525A931AAD9F4B00A80DED /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8525A921AAD9F4B00A80DED /* TabViewController.m */; };
-		E8525A961AADBEDA00A80DED /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8525A951AADBEDA00A80DED /* uploadViewController.m */; };
 		E85D08F31AA5C8A50088CA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85D08F21AA5C8A50088CA28 /* Foundation.framework */; };
 		E85D08F51AA5C8AD0088CA28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85D08F41AA5C8AD0088CA28 /* UIKit.framework */; };
 		E85D08F71AA5CA080088CA28 /* loginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E85D08F61AA5CA080088CA28 /* loginView.xib */; };
@@ -88,7 +87,6 @@
 		E8FC4ABA1AAF20CC0032CFAD /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = E8FC4AB91AAF20CC0032CFAD /* close.png */; };
 		EE2B59EA1AD24F66003A73F9 /* searchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2B59E91AD24F66003A73F9 /* searchListViewController.m */; };
 		EE2EF1A81AD44354008C5E6A /* filterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2EF1A71AD44354008C5E6A /* filterView.xib */; };
-		EE2EF1AB1AD44FA3008C5E6A /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF1AA1AD44FA3008C5E6A /* testViewController.m */; };
 		EE2EF1AE1AD4501C008C5E6A /* filterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2EF1AD1AD4501C008C5E6A /* filterView.m */; };
 		EE310F981AE38AF3005D0659 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE310F951AE38AF3005D0659 /* TADotView.m */; };
 		EE310F991AE38AF3005D0659 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EE310F971AE38AF3005D0659 /* TAPageControl.m */; };
@@ -148,8 +146,6 @@
 		E8525A8F1AAD795600A80DED /* resturantGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resturantGalleryViewController.m; sourceTree = "<group>"; };
 		E8525A911AAD9F4B00A80DED /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
 		E8525A921AAD9F4B00A80DED /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
-		E8525A941AADBEDA00A80DED /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uploadViewController.h; path = pastaa/uploadViewController.h; sourceTree = "<group>"; };
-		E8525A951AADBEDA00A80DED /* uploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = uploadViewController.m; path = pastaa/uploadViewController.m; sourceTree = "<group>"; };
 		E85D08F21AA5C8A50088CA28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E85D08F41AA5C8AD0088CA28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E85D08F61AA5CA080088CA28 /* loginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loginView.xib; sourceTree = "<group>"; };
@@ -237,8 +233,6 @@
 		EE2B59E81AD24F66003A73F9 /* searchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchListViewController.h; sourceTree = "<group>"; };
 		EE2B59E91AD24F66003A73F9 /* searchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchListViewController.m; sourceTree = "<group>"; };
 		EE2EF1A71AD44354008C5E6A /* filterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = filterView.xib; sourceTree = "<group>"; };
-		EE2EF1A91AD44FA3008C5E6A /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
-		EE2EF1AA1AD44FA3008C5E6A /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		EE2EF1AC1AD4501C008C5E6A /* filterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterView.h; sourceTree = "<group>"; };
 		EE2EF1AD1AD4501C008C5E6A /* filterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = filterView.m; sourceTree = "<group>"; };
 		EE310F941AE38AF3005D0659 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
@@ -368,8 +362,6 @@
 				EE310F971AE38AF3005D0659 /* TAPageControl.m */,
 				EE34C0E71AD143130068D90F /* AKPickerView.h */,
 				EE34C0E81AD143130068D90F /* AKPickerView.m */,
-				E8525A941AADBEDA00A80DED /* uploadViewController.h */,
-				E8525A951AADBEDA00A80DED /* uploadViewController.m */,
 				E88831891AA5F8C900FDB75E /* framework */,
 				E8FAA89A1AA4A08700686796 /* pastaa */,
 				E8FAA8B41AA4A08700686796 /* pastaaTests */,
@@ -426,8 +418,6 @@
 				EE2EF1A71AD44354008C5E6A /* filterView.xib */,
 				EE2EF1AC1AD4501C008C5E6A /* filterView.h */,
 				EE2EF1AD1AD4501C008C5E6A /* filterView.m */,
-				EE2EF1A91AD44FA3008C5E6A /* testViewController.h */,
-				EE2EF1AA1AD44FA3008C5E6A /* testViewController.m */,
 				E8525A8E1AAD795600A80DED /* resturantGalleryViewController.h */,
 				E8525A8F1AAD795600A80DED /* resturantGalleryViewController.m */,
 				E850EFE41AAC70AC000AEA4C /* resturantMainViewController.h */,
@@ -705,7 +695,6 @@
 				EEA9A59F1AE63224000E92E5 /* myCommentViewController.m in Sources */,
 				E85D08FA1AA5CCBA0088CA28 /* loginView.m in Sources */,
 				EE2B59EA1AD24F66003A73F9 /* searchListViewController.m in Sources */,
-				EE2EF1AB1AD44FA3008C5E6A /* testViewController.m in Sources */,
 				EEC376641AD406D800352060 /* resturantMainViewController.m in Sources */,
 				EE310F991AE38AF3005D0659 /* TAPageControl.m in Sources */,
 				EE310F9C1AE38B00005D0659 /* TAAbstractDotView.m in Sources */,
@@ -718,7 +707,6 @@
 				EE411BD61ADA4A3500DD29F5 /* reserveCell.m in Sources */,
 				E8F6A4451AB5C5680050CA23 /* CommentCell.m in Sources */,
 				E8525A901AAD795600A80DED /* resturantGalleryViewController.m in Sources */,
-				E8525A961AADBEDA00A80DED /* uploadViewController.m in Sources */,
 				E8FAA8C31AA4A14E00686796 /* LoginViewController.m in Sources */,
 				E888318C1AA5F8FA00FDB75E /* MBProgressHUD.m in Sources */,
 			);

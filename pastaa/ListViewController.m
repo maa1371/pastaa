@@ -10,6 +10,7 @@
 #import "TabViewController.h"
 #import "MBProgressHUD.h"
 #import "searchFilterView.h"
+#import "LoginViewController.h"
 
 
 @interface ListViewController ()<AKPickerViewDataSource, AKPickerViewDelegate,UITextFieldDelegate>
@@ -19,6 +20,7 @@
     UIView* pastaaView;
     UIView* aboutUsView;
     UITapGestureRecognizer* tapOnView;
+    LoginViewController   *login;
 }
 @property (nonatomic, strong) AKPickerView *resturantTypePickerView;
 @property (nonatomic, strong) NSArray *resturantTypeTitles;
@@ -77,7 +79,8 @@
     
     isMenuOn=NO;
     isFilterOn=NO;
-    buttonsTitle=[[NSMutableArray alloc]initWithObjects:@"پستا",@"درباره ما",nil];
+    buttonsTitle=[[NSMutableArray alloc]initWithObjects:    @"پستا",@"درباره ما",@"خروج",nil];
+    
     
     self.resturantListPic=[[NSMutableArray alloc]init];
     self.resturants=[[NSArray alloc]init];
@@ -582,12 +585,28 @@
         isMenuOn=NO;
         [UIView animateWithDuration:0.1 animations:^{
             self.collectionList.transform=CGAffineTransformMakeTranslation(0, 0);
-//            self.collectionList.userInteractionEnabled=YES;
+            //            self.collectionList.userInteractionEnabled=YES;
             menuBtn.userInteractionEnabled=NO;
         } completion:^(BOOL finished) {
             pastaaView.alpha=1;
             [pastaaView addGestureRecognizer:tapOnView];
         }];
+    }
+    else if ([sender.titleLabel.text isEqualToString:@"خروج"]) {
+        isMenuOn=NO;
+        [UIView animateWithDuration:0.1 animations:^{
+            self.collectionList.transform=CGAffineTransformMakeTranslation(0, 0);
+            //            self.collectionList.userInteractionEnabled=YES;
+            menuBtn.userInteractionEnabled=NO;
+        } completion:^(BOOL finished) {
+            [PFUser logOut];
+            [self dismissViewControllerAnimated:YES completion:^{
+                
+            }];
+            
+
+        }];
+        
     }
     
 }
