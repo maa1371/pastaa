@@ -290,19 +290,12 @@
 
 -(NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewRowAction *shareAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Share" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+    UITableViewRowAction *shareAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"هدیه به دوستان" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
         
         
         
         
         NSString *textToShare1=@"سلام دوست عزیزم";
-        [_reservedResturants removeObjectAtIndex:indexPath.row];
-        [_hours removeObjectAtIndex:indexPath.row];
-        [_dates removeObjectAtIndex:indexPath.row];
-        [_rCount removeObjectAtIndex:indexPath.row];
-        [_resturantName removeObjectAtIndex:indexPath.row];
-        //        [_restID removeObjectAtIndex:indexPath.row];
-        [_reserveID removeObjectAtIndex:indexPath.row];
         
         
         
@@ -316,7 +309,6 @@
         NSString *textToShare6=@"ساعت";
        
         NSString *textToShare7=[NSString stringWithFormat:@"%@ الی %i",[self.hours objectAtIndex:indexPath.row],((NSString*)[self.hours objectAtIndex:indexPath.row]).intValue+1];
-        
         NSString *textToShare8=@"دعوت میکنم";
         NSString *textToShare9=@"کد رزرو شما ";
         NSString *textToShare10=[_reserveID objectAtIndex:indexPath.row];
@@ -350,7 +342,7 @@
     shareAction.backgroundColor = [UIColor greenColor];
     
     
-    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Delete"  handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+    UITableViewRowAction *deleteAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"کنسل"  handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
         
         
         
